@@ -977,6 +977,31 @@ main {
         grid-column: 1 / -1;
         text-align: left;
     }
+    
+    /* Hero Fixes for Mobile */
+    .strip-content {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-massive-name {
+        transform: scaleX(1); /* Stop horizontal overflow */
+    }
+    
+    /* Gallery Fixes for Mobile */
+    .gallery-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .gallery-item {
+        width: 100%;
+        min-width: 100%;
+    }
+    .gallery-info {
+        width: 100%;
+    }
 }
 
 /* ==========================================================================
