@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasi | Portfolio — AI Developer + Designer</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Portfolio of Wasi — AI Developer and Graphic Designer based in India. Custom digital experiences for brands that value distinction over conformity.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wasi | Portfolio — AI Developer + Designer">
+    <meta property="og:description" content="Custom digital experiences for brands that value distinction. No templates. No shortcuts. Handcrafted visual experiences.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wasi | Portfolio">
+    <meta name="twitter:description" content="AI Developer + Graphic Designer. Custom digital experiences for brands that value distinction.">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="hero_video.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="about_video.mp4" as="video" type="video/mp4">
+    
+    <!-- Google Fonts: Inter for clean, crisp typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"><span class="cursor-text"></span></div>
+
+    <!-- Top Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-left">
+            <span class="logo">Wasi®</span>
+        </div>
+        <div class="nav-middle">
+            <div class="nav-title">Quick Links</div>
+            <div class="nav-desc quick-links">
+                <a href="#hero" class="roll-link" data-text="Home"><span>Home</span></a>, 
+                <a href="#expertise" class="roll-link" data-text="About"><span>About</span></a>, 
+                <a href="#websites" class="roll-link" data-text="Work"><span>Work</span></a>, 
+                <a href="#contact" class="roll-link" data-text="Contact"><span>Contact</span></a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-title">Based in India</div>
+            <div class="nav-desc">AI Developer + Graphic Designer</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <!-- Video Graphic -->
+            <video src="hero_video.mp4" id="hero-2d-image" autoplay loop muted playsinline></video>
+
+            <div class="hero-headline-wrapper">
+                <h2 class="hero-headline">
+                    Uncompromising<br>
+                    eye for design.<br>
+                    Fluid Interfaces.<br>
+                    High-end visual representation.
+                </h2>
+            </div>
+            
+            <div class="white-strip">
+                <div class="strip-content">
+                    <span>Art Direction</span>
+                    <span class="dot">●</span>
+                    <span>Visuals</span>
+                    <span class="dot">●</span>
+                    <span>Strategy</span>
+                </div>
+            </div>
+
+            <div class="hero-massive-name-wrapper">
+                <h1 class="hero-massive-name">
+                    Wasi<span class="tm">TM</span>
+                </h1>
+            </div>
+
+            <div class="hero-footer-bar">
+                <span>© CURATED INTERFACES</span>
+                <span>02</span>
+                <span>DESIGNS</span>
+            </div>
+        </section>
+
+        <!-- Section 2: Palmer-Style About -->
+        <section class="about-section-v2" id="expertise">
+            <!-- Background Video -->
+            <div class="about-v2-video-wrap">
+                <video src="about_video.mp4" id="about-video" autoplay loop muted playsinline></video>
+                <div class="about-v2-video-overlay"></div>
+            </div>
+
+            <div class="about-v2-content">
+                <!-- Left: Massive Headline -->
+                <div class="about-v2-left reveal">
+                    <h2 class="about-v2-massive">
+                        4+ years™<br>of digital<br>form, sharp<br>interactions<br>& relentless<br><em>creative</em><br>discipline.
+                    </h2>
+                </div>
+
+                <!-- Right: Sticky Info Panel -->
+                <div class="about-v2-right">
+                    <div class="about-v2-sticky reveal">
+                        <p class="about-v2-label">ABOUT</p>
+                        <p class="about-v2-desc">
+                            I design for brands that refuse to look like everyone else. No templates. No shortcuts. Just precise, handcrafted visual experiences.
+                        </p>
+                        <div class="about-v2-tags">
+                            <span class="about-v2-tag">Creative Design</span>
+                            <span class="about-v2-tag">AI Development</span>
+                            <span class="about-v2-tag">Adobe Suite</span>
+                            <span class="about-v2-tag">UI/UX Design</span>
+                            <span class="about-v2-tag">Frontend Engineering</span>
+                            <span class="about-v2-tag">Brand Identity</span>
+                        </div>
+                        <a href="#contact" class="outline-btn"><span class="roll-link" data-text="CONTACT"><span>CONTACT</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 Divider Bar -->
+        <div class="hero-footer-bar reveal">
+            <span>© INTERACTIVE GALLERY</span>
+            <span>03</span>
+            <span>CREATIVE DEVELOPMENT</span>
+        </div>
+
+        <!-- Section 3: Projects -->
+        <section class="projects-section" id="projects">
+            <!-- Left Column -->
+            <div class="projects-col-left">
+                <div class="project-card large-card text-card reveal">
+                    <div class="text-card-content">
+                        <div class="location-pin">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Based In India</span>
+                        </div>
+                        
+                        <h2 class="story-headline">
+                            I didn't start in design.<br>
+                            I started in C.
+                        </h2>
+                        
+                        <p class="story-paragraph">
+                            Two years of building things I couldn't see taught me to obsess over the ones I could. When I discovered that a website could be felt, not just used, something shifted. Color, hierarchy, motion, tension. A whole language I didn't know existed.
+                        </p>
+                        
+                        <p class="story-paragraph">
+                            That's still what drives me. The 17 year old who fell for the visual. The problem-solver who found that some problems are beautiful.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects-header reveal">
+                    <p class="projects-desc">
+                        Custom digital experiences for brands that value distinction over conformity.<br><br>
+                        <strong>No templates. No formulaic solutions.</strong><br><br>
+                        Meticulously crafted websites that reflect a unique identity, combining strategic thinking with refined visual execution.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="projects-col-right">
+                <div class="project-card small-card reveal">
+                    <div class="project-image-container photo-stack">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTROwqeHGh4oZKLo8xMbtOF-J49Bk0jBGblrrH4P8Xg9MF8aHnalJS5jrKkEV6OmDuM7Y67BHaEQrSPJw8r2v5SVH2b6dOB1P7_kZJRmhlqkHJLPG_wvNTtH-qfpp3l9FNmyqkVrczDyZM_ysUbT3JsO1w4fe6B3G5zg6iNch6LyJ3pKpcosUdy-R7i4FB5mACbCRu_9KMCiCilnaFAOYAwMyHDp_x2kTupvTvoKnKHMFcE6yP8HbaLw8BykZsrrFrqSUS6aP2_w" class="stack-img img-3" loading="lazy" alt="Forged Project - Structural Integrity by design hero layout">
+                        <img src="proj3_new_2.png" class="stack-img img-2" loading="lazy" alt="Cosmos Element — Bold red portrait composition with dramatic lighting">
+                        <img src="proj3_new_1.png" class="stack-img img-1" loading="lazy" alt="Cosmos Element - Dark editorial web layout with typography and desert photography">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 Divider Bar -->
+        <div class="hero-footer-bar reveal">
+            <span>© FEATURED PROJECTS</span>
+            <span>04</span>
+        </div>
+
+        <!-- Section 4: Work Gallery -->
+        <section class="websites-gallery" id="websites">
+            <div class="gallery-container">
+
+                <div class="gallery-row reveal">
+                    <a href="./forged/index.html" target="_blank" rel="noopener noreferrer" class="gallery-item">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTROwqeHGh4oZKLo8xMbtOF-J49Bk0jBGblrrH4P8Xg9MF8aHnalJS5jrKkEV6OmDuM7Y67BHaEQrSPJw8r2v5SVH2b6dOB1P7_kZJRmhlqkHJLPG_wvNTtH-qfpp3l9FNmyqkVrczDyZM_ysUbT3JsO1w4fe6B3G5zg6iNch6LyJ3pKpcosUdy-R7i4FB5mACbCRu_9KMCiCilnaFAOYAwMyHDp_x2kTupvTvoKnKHMFcE6yP8HbaLw8BykZsrrFrqSUS6aP2_w" alt="Forged - Brand Identity">
+                    </a>
+                    <div class="gallery-info">
+                        <span class="gallery-label">Branding</span>
+                        <h3 class="gallery-title">Forged</h3>
+                        <p class="gallery-desc">A brutalist brand identity system built on structural precision and raw luxury.</p>
+                        <span class="gallery-arrow">↗</span>
+                    </div>
+                </div>
+
+                <div class="gallery-row reveal">
+                    <a href="https://www.behance.net/gallery/250626553/THE-PORTRAIT-RED?" target="_blank" rel="noopener noreferrer" class="gallery-item">
+                        <img src="proj3_new_2.png" alt="THE PORTRAIT RED">
+                    </a>
+                    <div class="gallery-info">
+                        <span class="gallery-label">App Design</span>
+                        <h3 class="gallery-title">THE PORTRAIT RED</h3>
+                        <p class="gallery-desc">A high-end cinematic app experience defined by striking crimson lighting, editorial typography, and fluid mobile interactions.</p>
+                        <span class="gallery-arrow">↗</span>
+                    </div>
+                </div>
+
+                <div class="gallery-row reveal">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="gallery-item">
+                        <img src="proj3_new_1.png" alt="Editorial Layout">
+                    </a>
+                    <div class="gallery-info">
+                        <span class="gallery-label">Editorial</span>
+                        <h3 class="gallery-title">Editorial</h3>
+                        <p class="gallery-desc">Dark editorial layout with typographic hierarchy and desert photography.</p>
+                        <span class="gallery-arrow">↗</span>
+                    </div>
+                </div>
+
+                <div class="gallery-row reveal">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="gallery-item">
+                        <img src="forged_hero.png" alt="Project Four">
+                    </a>
+                    <div class="gallery-info">
+                        <span class="gallery-label">Development</span>
+                        <h3 class="gallery-title">Project 04</h3>
+                        <p class="gallery-desc">Full-stack web application with custom backend architecture.</p>
+                        <span class="gallery-arrow">↗</span>
+                    </div>
+                </div>
+
+                <div class="gallery-row reveal">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="gallery-item">
+                        <img src="proj3_new_2.png" alt="Project Five">
+                    </a>
+                    <div class="gallery-info">
+                        <span class="gallery-label">UI/UX</span>
+                        <h3 class="gallery-title">Project 05</h3>
+                        <p class="gallery-desc">Interface design focused on clarity, interaction, and user delight.</p>
+                        <span class="gallery-arrow">↗</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="site-footer reveal" id="contact">
+            <div class="footer-top">
+                <h2 class="footer-massive-text">Let's talk.</h2>
+                <a href="mailto:businessvinzx@gmail.com" class="footer-email-btn">businessvinzx@gmail.com <span class="arrow">↗</span></a>
+            </div>
+            
+            <div class="footer-bottom-grid">
+                <div class="footer-col">
+                    <h4>SOCIALS</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/wasi_._" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="#">Twitter/X</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>WORK</h4>
+                    <ul>
+                        <li><a href="https://github.com/wasii18" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://behance.net/yves_w" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-end-col">
+                    <p>© 2026 WASI™</p>
+                    <p>ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- SVG Filters for Image Upscaling & Text Sharpening -->
+    <svg width="0" height="0" style="position:absolute;z-index:-1;display:none;">
+        <filter id="super-sharpen">
+            <!-- A 3x3 convolution matrix that heavily sharpens edges (like an Unsharp Mask) -->
+            <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
+        </filter>
+        <filter id="extreme-sharpen">
+            <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-1 -1 -1 -1 9 -1 -1 -1 -1"/>
+        </filter>
+    </svg>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
