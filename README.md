@@ -1,6 +1,6 @@
 # Wasi - Portfolio
 
-A high-end, brutalist digital portfolio crafted for Web Design, UI/UX, Frontend Engineering, and Brand Identity.
+A high-end, digital portfolio crafted for Web Design, UI/UX, Frontend Engineering, and Brand Identity.
 
 ## Features
 - Custom interactive cursor
@@ -10,8 +10,9 @@ A high-end, brutalist digital portfolio crafted for Web Design, UI/UX, Frontend 
 
 ## Deployment
 This project is built with static HTML, CSS, and plain JavaScript. 
-It can be deployed to Vercel instantly.
+It can be deployed to Vercel instantly or any other deployer instantly.
 
+For vercel 
 1. Push this repository to GitHub.
 2. Go to [Vercel](https://vercel.com).
 3. Import the repository.
