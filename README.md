@@ -1,6 +1,6 @@
 # Wasi - Portfolio
 
-A high-end, brutalist digital portfolio crafted for Web Design, UI/UX, Frontend Engineering, and Brand Identity.
+A high-end, digital portfolio crafted for Web Design, UI/UX, Frontend Engineering, and Brand Identity.
 
 ## Features
 - Custom interactive cursor
