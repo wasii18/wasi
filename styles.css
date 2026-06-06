@@ -1019,3 +1019,239 @@ button:focus-visible,
     outline: 2px solid var(--white);
     outline-offset: -2px;
 }
+
+/* ==========================================================================
+   MOBILE OPTIMISATION (max-width: 768px)
+   Desktop remains completely untouched. Every rule is scoped to mobile only.
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* --- Hide custom cursor on touch devices --- */
+    .custom-cursor {
+        display: none !important;
+    }
+    body, a {
+        cursor: auto;
+    }
+
+    /* --- Navbar: compact single-column --- */
+    .navbar {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        padding: 1rem 1.2rem;
+    }
+    .nav-middle, .nav-right {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav-title {
+        font-size: 0.75rem;
+    }
+    .nav-desc {
+        font-size: 0.75rem;
+    }
+
+    /* --- Main offset for smaller navbar --- */
+    main {
+        padding-top: 160px;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+        min-height: auto;
+        padding-top: 2rem;
+    }
+    #hero-2d-image {
+        width: 40vw;
+        height: 40vw;
+        top: 0;
+        right: 5%;
+    }
+    .hero-headline-wrapper {
+        padding: 0 1.2rem;
+        margin-top: 2vh;
+    }
+    .hero-headline {
+        font-size: clamp(1.2rem, 5.5vw, 2rem);
+    }
+
+    /* White strip */
+    .white-strip {
+        padding: 0.5rem 1.2rem;
+    }
+    .strip-content {
+        gap: 1.5rem;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Massive name — prevent horizontal overflow */
+    .hero-massive-name-wrapper {
+        overflow: hidden;
+    }
+    .hero-massive-name {
+        font-size: clamp(4rem, 22vw, 10rem);
+        transform: scaleX(1);
+        margin-left: 0;
+    }
+    .hero-massive-name .tm {
+        font-size: clamp(1rem, 3.5vw, 2rem);
+    }
+
+    /* Divider bars */
+    .hero-footer-bar {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.55rem;
+    }
+
+    /* --- Section 2: About --- */
+    .about-section-v2 {
+        min-height: auto;
+    }
+    .about-v2-content {
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 3rem 1.2rem;
+    }
+    .about-v2-left {
+        max-width: 100%;
+    }
+    .about-v2-right {
+        max-width: 100%;
+    }
+    .about-v2-sticky {
+        position: static;
+    }
+    .about-v2-massive {
+        font-size: clamp(2rem, 9vw, 4rem);
+    }
+    .about-v2-desc {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .about-v2-tags {
+        gap: 8px;
+    }
+    .about-v2-tag {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+    }
+    .outline-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    /* --- Section 3: Projects grid --- */
+    .projects-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 1.2rem;
+    }
+    .projects-col-right {
+        margin-top: 2rem;
+    }
+    .projects-header {
+        margin-top: 3rem;
+    }
+    .story-headline {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+    .story-paragraph {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+    .projects-desc {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .large-card .project-image-container {
+        height: 50vh;
+    }
+    .small-card .project-image-container {
+        height: 40vh;
+    }
+
+    /* Photo stack */
+    .photo-stack {
+        min-height: 220px;
+    }
+    .stack-img {
+        width: 92%;
+    }
+
+    /* --- Section 4: Gallery --- */
+    .websites-gallery {
+        padding: 2rem 1.2rem;
+    }
+    .gallery-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+    .gallery-item {
+        width: 100%;
+        min-width: 100%;
+    }
+    .gallery-info {
+        width: 100%;
+    }
+    .gallery-title {
+        font-size: 1.3rem;
+    }
+    .gallery-desc {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
+
+    /* --- Footer --- */
+    .site-footer {
+        padding: 4rem 1.2rem 2rem 1.2rem;
+        gap: 3rem;
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .footer-massive-text {
+        font-size: 13vw;
+    }
+    .footer-email-btn {
+        font-size: 0.85rem;
+        padding: 0.8rem 1.5rem;
+        align-self: flex-start;
+        word-break: break-all;
+    }
+    .footer-bottom-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .footer-end-col {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+}
+
+/* ==========================================================================
+   EXTRA-SMALL DEVICES (max-width: 400px)
+   ========================================================================== */
+@media (max-width: 400px) {
+    .hero-massive-name {
+        font-size: clamp(3rem, 20vw, 6rem);
+    }
+    .about-v2-massive {
+        font-size: clamp(1.8rem, 8vw, 3rem);
+    }
+    .footer-massive-text {
+        font-size: 15vw;
+    }
+    .footer-email-btn {
+        font-size: 0.75rem;
+        padding: 0.7rem 1.2rem;
+    }
+    .gallery-title {
+        font-size: 1.1rem;
+    }
+}
